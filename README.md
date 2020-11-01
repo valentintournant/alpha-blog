@@ -1,6 +1,6 @@
 # Alpha Blog
 
-Alpha blog is a simple web app where you can create articles!
+Alpha blog is a simple web app where you can create articles! (in production)
 
 
 ## Setup
