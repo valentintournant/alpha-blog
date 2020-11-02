@@ -1,5 +1,8 @@
 class User < ApplicationRecord
+<<<<<<< HEAD
   before_save { self.email = email.downcase }
+=======
+>>>>>>> user-articles-association
   has_many :articles
   validates :username, presence:true,
                       uniqueness: { case_sensitive: false },
