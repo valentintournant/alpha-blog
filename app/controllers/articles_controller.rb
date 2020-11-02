@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
   def create
     # render plain: params[:article](debug)
     @article = Article.new(article_params)
+    @article.user = User.first
     # render plain: @article.inspect
     if @article.save
       redirect_to (@article), notice: 'Article was created successfully.'
