@@ -15,11 +15,10 @@ class ArticlesController < ApplicationController
   def edit
   end
 
-
   def create
     # render plain: params[:article](debug)
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     # render plain: @article.inspect
     if @article.save
       redirect_to (@article), notice: 'Article was created successfully.'
