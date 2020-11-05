@@ -18,7 +18,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    byebug
     # render plain: params[:article](debug)
     @article = Article.new(article_params)
     @article.user = current_user
